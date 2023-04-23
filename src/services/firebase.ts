@@ -3,7 +3,7 @@ import { getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
-const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_API)
+const firebaseConfig = JSON.parse(import.meta.env.VITE_FIREBASE_CONFIG)
 
 const app = initializeApp(firebaseConfig)
 export const auth = getAuth(app)

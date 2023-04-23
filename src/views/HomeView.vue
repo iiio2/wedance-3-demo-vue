@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import useAuth from '../composables/useAuth'
 import home from '../assets/home.jpg'
+
+const { loginWithGoogle } = useAuth()
 </script>
 
 <template>
@@ -12,7 +15,7 @@ import home from '../assets/home.jpg'
           Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
           exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <button @click="loginWithGoogle" class="btn btn-primary">Get Started</button>
       </div>
     </div>
   </div>
