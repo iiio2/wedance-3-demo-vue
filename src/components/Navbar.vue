@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import useAuth from '@/composables/useAuth'
+
+const { user, logout } = useAuth()
 </script>
 
 <template>
@@ -26,16 +29,22 @@ import { RouterLink } from 'vue-router'
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-primary"
       >
         <li>
-          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </li>
+        <li v-if="user">
+          <RouterLink to="/profile">Profile</RouterLink>
         </li>
         <li>
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/events">Events</RouterLink>
         </li>
         <li>
           <RouterLink to="/contact">Contact</RouterLink>
         </li>
+        <li v-if="user" @click="logout">
+          <a>Logout</a>
+        </li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-xl">WeDance</a>
+    <RouterLink to="/" class="btn btn-ghost normal-case text-xl">WeDance</RouterLink>
   </div>
 </template>

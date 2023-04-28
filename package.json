@@ -17,7 +17,8 @@
     "daisyui": "^2.51.5",
     "firebase": "^9.20.0",
     "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-toastify": "^0.1.7"
   },
   "devDependencies": {
     "@playwright/test": "^1.31.1",

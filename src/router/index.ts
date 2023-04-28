@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,31 @@ const router = createRouter({
       path: '/events',
       name: 'events',
       component: () => import('../views/EventsView.vue')
+    },
+    {
+      path: '/event/:id',
+      name: 'event',
+      component: () => import('../views/EventView.vue')
+    },
+    {
+      path: '/:id',
+      name: 'event-form',
+      component: () => import('../views/EventFormView.vue')
+    },
+    {
+      path: '/user/:id',
+      name: 'user',
+      component: () => import('../views/UserView.vue')
+    },
+    {
+      path: '/edit-profile',
+      name: 'edit-profile',
+      component: () => import('../views/EditProfileView.vue')
+    },
+    {
+      path: '/:catchAll(.*)',
+      name: 'not-found',
+      component: () => import('../components/NotFound.vue')
     }
   ]
 })
