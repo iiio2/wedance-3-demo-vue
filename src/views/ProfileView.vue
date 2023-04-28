@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
+import WithSpinner from '@/components/WithSpinner.vue'
+import ProfileContent from '@/components/ProfileContent.vue'
+import ProfileEvents from '@/components/ProfileEvents.vue'
+</script>
+
 <template>
-  <h3>Hello Profile</h3>
+  <WithSpinner>
+    <DefaultLayout>
+      <ProfileContent />
+      <ProfileEvents />
+    </DefaultLayout>
+  </WithSpinner>
 </template>

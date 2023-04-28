@@ -12,7 +12,9 @@
     aliquid quam amet aut repellendus ut ipsa maiores similique aspernatur incidunt! Eos dolorem
     consequuntur explicabo ratione dolor nesciunt facilis ad libero rem nemo. Doloribus aliquam nisi
     dolore reprehenderit? Voluptatem dolorem sunt autem similique perferendis. Velit at quae laborum
-    minima?
+    minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos commodi modi magni
+    eius, earum culpa eaque aliquid quaerat maxime repellat ipsum necessitatibus saepe error,
+    aspernatur recusandae voluptatum repellendus sequi.
   </p>
 </template>
 
