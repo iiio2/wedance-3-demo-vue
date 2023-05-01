@@ -65,6 +65,7 @@ const handleSubmit = () => {
             <span className="label-text">Email</span>
           </label>
           <input
+            disabled
             type="email"
             placeholder="Type here"
             class="input input-bordered w-full max-w-xs"
@@ -76,6 +77,7 @@ const handleSubmit = () => {
             <span className="label-text">Username</span>
           </label>
           <input
+            disabled
             type="text"
             placeholder="Type here"
             class="input input-bordered w-full max-w-xs"
